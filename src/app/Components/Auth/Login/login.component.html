@@ -1,0 +1,14 @@
+<form name="form" (ngSubmit)="onSubmit()" class="form-container" novalidate>
+  <div class="form-title">
+    Welcome,<br><span>sign up to continue</span>
+  </div>
+  <div class="input-group">
+    <input class="input-field" name="email" placeholder="Email" type="email" [(ngModel)]="form.email" required>
+  </div>
+  <div class="input-group">
+    <input class="input-field" name="password" placeholder="Password" type="password" [(ngModel)]="form.password" required>
+  </div>
+  <button type="submit" class="submit-button">LogIn</button>
+  <div>You don't have an account ? <a routerLink="/register"> Register </a> 
+  </div>
+</form>

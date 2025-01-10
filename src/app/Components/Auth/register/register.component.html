@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="heading">Create New Account</div>
+  <form class="form" (ngSubmit)="onSubmit()">
+    <div class="input-field">
+      <input
+        required
+        autocomplete="off"
+        type="text"
+        name="name"
+        id="username"
+        [(ngModel)]="form.name"
+      />
+      <label for="username">Full Name</label>
+    </div>
+    <div class="input-field">
+      <input
+        required
+        autocomplete="off"
+        type="email"
+        name="email"
+        id="email"
+        [(ngModel)]="form.email"
+      />
+      <label for="email">Email</label>
+    </div>
+    <div class="input-field">
+      <input
+        required
+        autocomplete="off"
+        type="password"
+        name="password"
+        id="password"
+        [(ngModel)]="form.password"
+      />
+      <label for="password">Password</label>
+    </div>
+    <div class="input-field">
+      <input
+        required
+        autocomplete="off"
+        type="number"
+        name="roles"
+        id="role"
+        [(ngModel)]="form.roles"
+      />
+      <label for="role">Role</label>
+    </div>
+    <div class="input-field">
+      <input
+        required
+        autocomplete="off"
+        type="number"
+        name="age"
+        id="age"
+        [(ngModel)]="form.age"
+      />
+      <label for="age">age</label>
+    </div>
+    <div class="btn-container">
+      <button type="submit" class="btn btn-primary">Register</button>
+      <div class="acc-text">
+        Already have an account? <a routerLink="/login" class="login-link">Log In</a>
+      </div>
+    </div>
+  </form>
+</div>
